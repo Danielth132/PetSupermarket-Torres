@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@200&family=Big+Shoulders+Text:wght@300;400&family=Lemonada:wght@700&display=swap');
+
+/*Reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: white;
+    color: black;
+}
+
+/*Grid*/
+.contenedor{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(3,auto);
+
+    grid-template-areas: 
+    "header header header"
+    "contenido contenido contenido"
+    "footer footer footer"
+    ;
+
+
+}
+
+
+.contenedor .header{
+    grid-area: header;
+}
+
+.contenedor .contenido{
+    grid-area: contenido;
+}
+
+.contenedor .pie{
+    grid-area: footer;
+}
+
+
+
+/*Estilos pagina*/
+h1{
+    font-size: 100px;
+    font-family: 'Lemonada', cursive;
+    text-align: center;
+
+
+    color: rgb(31, 7, 7);
+    background-color: yellow;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Arima', cursive;
+    font-family: 'Big Shoulders Text', cursive;
+    font-family: 'Lemonada', cursive;
+}
+
+.carrito{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.carrito img{
+    max-width: 50px;
+    max-height: 50px;
+
+}
+
+.menu{
+    
+    display: flex;
+    justify-content: right;
+    background-color: aqua;
+
+
+}
+.menu li{
+    display: flex;
+    margin: 2px;
+    padding-left: 10px;
+    font-size: 35px;
+
+    
+}
+.portada{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+
+}
+.promo{
+    margin: 20px auto;
+    text-align: center;
+    border: 10px solid yellow;
+    font-size: 20px;
+    
+}
+.promo thead{
+    background-color: aqua;
+}
+.promo tbody tr th{
+    padding: 10px;
+}
+.vendido, .productos{
+    background-color: aqua;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    
+
+}
+.vendido img, .productos img{
+    padding: 50px;
+}
+
+.pie a{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.formulario{
+    background-image: url(../img/f.elconfidencial.com_original_66e_7c0_ca2_66e7c0ca2c5263beb9c97da6c63b4365.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.formulario form{
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.formulario h2{
+    color: white;
+}
+.formulario form input,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.formulario form textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .contenedor{
+        grid-template-areas: 
+        "header header header"
+        "contenido contenido contenido"
+        "footer footer footer";
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 25px;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+    .menu li{
+        font-size: 50px;
+    }
+    .vendido, .productos{  
+        flex-direction: column;
+        align-items: center;
+
+        
+    
+    }
+    .pie a{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+
+
+    }
+    .formulario form{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:480px){
+    .promo{
+        display: none;
+    }
+}
