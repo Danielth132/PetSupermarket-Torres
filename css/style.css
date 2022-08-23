@@ -52,15 +52,42 @@ h1{
 
 
     color: rgb(31, 7, 7);
-    background-color: yellow;
+    background: linear-gradient(45deg,aqua,yellow,aqua);
     padding: 10px;
+
+    animation-name: animacion;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 2s;
 }
+
+@keyframes animacion {
+    0%{
+        background: linear-gradient(45deg,aqua,yellow,aqua);
+    }
+    25%{
+        background: linear-gradient(45deg,yellow,aqua,yellow);
+    }
+    50%{
+        background: linear-gradient(45deg,aqua,yellow,aqua);
+    }
+    75%{
+        background: linear-gradient(45deg,yellow,aqua,yellow);
+    }
+    100%{
+        background: linear-gradient(45deg,aqua,yellow,aqua);
+    }
+
+    
+}
+
 h2{
     text-align: center;
     font-size: 50px;
     font-family: 'Arima', cursive;
     font-family: 'Big Shoulders Text', cursive;
     font-family: 'Lemonada', cursive;
+    background: linear-gradient(45deg,aqua,yellow,aqua)
 }
 
 .carrito{
@@ -80,6 +107,7 @@ h2{
     display: flex;
     justify-content: right;
     background-color: aqua;
+    
 
 
 }
@@ -91,6 +119,7 @@ h2{
 
     
 }
+
 .portada{
     display: flex;
     justify-content: center;
@@ -120,6 +149,16 @@ h2{
 }
 .vendido img, .productos img{
     padding: 50px;
+    transition: all 1s;
+    
+}
+.vendido img:hover{
+    transform: scale(1.2);
+    
+}
+
+.productos img:hover{
+    transform: scale(1.2)
 }
 
 .pie a{
@@ -147,7 +186,7 @@ h2{
 }
 
 .formulario h2{
-    color: white;
+    color: rgb(17, 15, 15);
 }
 .formulario form input,textarea{
     width: 100%;
@@ -167,6 +206,11 @@ h2{
     color: white;
     padding: 20px;
 }
+#boton:hover{
+    cursor: pointer;
+}
+
+
 
 @media screen and (max-width:768px) {
     .contenedor{
