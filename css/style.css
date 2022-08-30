@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: aqua;
     color: black;
 }
 
@@ -120,6 +120,10 @@ h2{
     
 }
 
+.nav-item{
+    font-size: 20px;
+}
+
 .portada{
     display: flex;
     justify-content: center;
@@ -164,9 +168,14 @@ h2{
     transform: scale(1.2)
 }
 
+.pie{
+    background-color: yellow;
+}
+
 .pie a{
     padding-left: 10px;
     font-size: 20px;
+    
 }
 
 .formulario{
