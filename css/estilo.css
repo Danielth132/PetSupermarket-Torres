@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@200&family=Big+Shoulders+Text:wght@300;400&family=Lemonada:wght@700&display=swap");
+/*variables*/
+/*Reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  background-color: aqua;
+  color: black; }
+
+/*Grid*/
+.contenedor {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(3, auto);
+  grid-template-areas: "header header header"
+ "contenido contenido contenido"
+ "footer footer footer"; }
+
+.contenedor .header {
+  grid-area: header; }
+
+.contenedor .contenido {
+  grid-area: contenido; }
+
+.contenedor .pie {
+  grid-area: footer; }
+
+/*Estilos pagina*/
+h1 {
+  font-size: 100px;
+  font-family: 'Lemonada', cursive;
+  text-align: center;
+  color: #1f0707;
+  background: linear-gradient(45deg, aqua, yellow, aqua);
+  padding: 10px;
+  animation-name: animacion;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-delay: 2s; }
+
+@keyframes animacion {
+  0% {
+    background: linear-gradient(45deg, aqua, yellow, aqua); }
+  25% {
+    background: linear-gradient(45deg, yellow, aqua, yellow); }
+  50% {
+    background: linear-gradient(45deg, aqua, yellow, aqua); }
+  75% {
+    background: linear-gradient(45deg, yellow, aqua, yellow); }
+  100% {
+    background: linear-gradient(45deg, a aqua, yellow, aqua); } }
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Arima', cursive;
+  font-family: 'Big Shoulders Text', cursive;
+  font-family: 'Lemonada', cursive;
+  background: linear-gradient(45deg, aqua, yellow, a aqua); }
+
+.carrito {
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+  .carrito img {
+    max-width: 50px;
+    max-height: 50px; }
+
+.menu {
+  display: flex;
+  justify-content: right;
+  background-color: aqua; }
+  .menu li {
+    display: flex;
+    margin: 2px;
+    padding-left: 10px;
+    font-size: 35px; }
+
+.nav-item {
+  font-size: 20px; }
+
+.portada {
+  display: flex;
+  justify-content: center;
+  background-color: aqua; }
+
+.promo {
+  margin: 20px auto;
+  text-align: center;
+  border: 10px solid yellow;
+  font-size: 20px; }
+  .promo thead {
+    background-color: aqua; }
+  .promo tbody tr th {
+    padding: 10px; }
+
+.vendido {
+  background-color: aqua;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline; }
+  .vendido img {
+    padding: 50px;
+    transition: all 1s; }
+  .vendido img:hover {
+    transform: scale(1.2); }
+
+.productos {
+  background-color: aqua;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline; }
+  .productos img {
+    padding: 50px;
+    transition: all 1s; }
+  .productos img:hover {
+    transform: scale(1.2); }
+
+.pie {
+  background-color: yellow; }
+  .pie a {
+    padding-left: 10px;
+    font-size: 20px; }
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    grid-template-areas: "header header header"
+ "contenido contenido contenido"
+ "footer footer footer"; }
+  h1 {
+    font-size: 50px; }
+  h2 {
+    font-size: 25px; }
+  .menu {
+    justify-content: center; }
+    .menu li {
+      font-size: 50px; }
+  .vendido, .productos {
+    flex-direction: column;
+    align-items: center; }
+  .pie a {
+    display: flex;
+    justify-content: center;
+    margin: 10px; }
+  .formulario form {
+    width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .promo {
+    display: none; } }
