@@ -1,47 +1,108 @@
-main{
-    .carrito{
+main {
+    .carrito {
         position: fixed;
         bottom: 0;
         right: 0;
-        
-        img{
+
+        img {
             max-width: 50px;
             max-height: 50px;
         }
     }
 
-    .promo{
+    .promo {
         margin: 20px auto;
         text-align: center;
         border: 10px solid $color-sec;
         font-size: 20px;
-    
-        thead{
+
+        thead {
             background-color: $color-pagina;
         }
-    
-        tbody{
-            tr{
-                th{
+
+        tbody {
+            tr {
+                th {
                     padding: 10px;
                 }
             }
         }
     }
 
-    h2{
+    h2 {
         text-align: center;
         font-size: 50px;
         font-family: 'Arima', cursive;
         font-family: 'Big Shoulders Text', cursive;
         font-family: 'Lemonada', cursive;
-        background: linear-gradient(45deg,$color-pagina,$color-sec,a$color-pagina) 
+        background: linear-gradient(45deg, $color-pagina, $color-sec, a$color-pagina)
     }
 
-    .vendido{
+    .vendido {
         @include product;
-        img{
+
+        img {
             @include image;
+        }
+    }
+
+    .productos {
+        @include product;
+
+        img {
+            @include image;
+        }
+    }
+
+    .formulario {
+        background-image: url(../img/f.elconfidencial.com_original_66e_7c0_ca2_66e7c0ca2c5263beb9c97da6c63b4365.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        form {
+            width: 1000px;
+            height: 1000px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 10px 20px;
+            box-sizing: border-box;
+            margin-top: 20px;
+            border-radius: 7px;
+
+            input {
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 10px;
+                box-sizing: border-box;
+                font-size: 20px;
+            }
+
+            textarea {
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 10px;
+                box-sizing: border-box;
+                font-size: 20px;
+
+                min-height: 100px;
+                max-height: 200px;
+                max-width: 100%;
+            }
+
+            h2 {
+                color: rgb(17, 15, 15);
+            }
+
+            #boton {
+                background-color: map-get($redes, facebook);
+                color: white;
+                padding: 20px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

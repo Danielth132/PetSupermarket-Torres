@@ -1,7 +1,57 @@
-.pie{
+.pie {
+    display: flex;
+    align-items: center;
     background-color: $color-sec;
-    a{
-        padding-left: 10px;
-        font-size: 20px;
+    padding-block: 20px;
+
+
+    .menu_pie {
+        
+        a {
+            color: black;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+    }
+
+
+    .iconos {
+        color: white;
+        display: flex;
+        gap: 3rem;
+        padding-left: 10rem;
+
+        .fa-brands {
+            padding: 1rem;
+        }
+    }
+}
+
+@each $redsocial, $colordered in $redes {
+    .fa-#{$redsocial} {
+        background-color: $colordered;
+    }    
+}
+/*extend*/
+.fa-facebook{
+    @extend %iconospag;
+    &:hover{
+        background-color: rgb(88, 129, 206);
+    }
+}
+
+.fa-instagram{
+    @extend %iconospag;
+
+    &:hover{
+        background-color: pink;
+    }
+}
+
+.fa-whatsapp{
+    @extend %iconospag;
+
+    &:hover{
+        background-color: rgb(129, 202, 18);
     }
 }

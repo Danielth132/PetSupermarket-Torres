@@ -6,32 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Accesorios</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://kit.fontawesome.com/e5e219bf2f.js" crossorigin="anonymous"></script>
+    <title>Pet Supermarket - Accesorios</title>
+    <meta name="description" content="Accesorios para tu mascota">
+    <meta name="keywords" content="comida, mascota, perro, gato, alimento, jueguete, argentina, promocion, pet, market">
 </head>
 
 <body>
     <div class="contenedor">
         <header class="header">
             <h1>Pet Supermarket</h1>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./perros.html">Perros</a>
-                    </li>
-                    <li>
-                        <a href="./gatos.html">Gatos</a>
-                    </li>
-                    <li>
-                        <a href="./accesorios.html">Accesorios</a>
-                    </li>
-                    <li>
-                        <a href="./contacto.html">contacto</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg" style="background-color: custom-color;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./perros.html">Perros</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./gatos.html">Gatos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./accesorios.html">Accesorios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+
+
+
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
             </nav>
         </header>
         <main class="contenido">
@@ -44,21 +66,97 @@
 
             <h2>Todos Nuestros Productos accesorios</h2>
 
-            <div class="productos">
-                <img src="../img/Comederogatoconorejas_200x.webp">
-                <img src="../img/ComelentoMedianoCafran-01_200x.webp">
-                <img src="../img/PeineManopladeGomaPetsPlast_200x.webp">
-                <img src="../img/PelotaPlasticoChicaSaborVainillaPetsPlastx2unidades_200x.webp">
-                <img src="../img/SHAMPOOBLANCO-01_200x.webp">
+            <div class="container-fluid productos">
+
+                <div class="row">
+                    <div class="col-sm-3">
+
+                        <div class="card">
+                            <img src="../img/Comederogatoconorejas_200x.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Comedero con orejas</h5>
+                                p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+
+                        <div class="card">
+                            <img src="../img/ComelentoMedianoCafran-01_200x.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Comedero mediano</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+
+                        <div class="card">
+                            <img src="../img/PeineManopladeGomaPetsPlast_200x.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Peine manopla</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+
+                        <div class="card">
+                            <img src="../img/PelotaPlasticoChicaSaborVainillaPetsPlastx2unidades_200x.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pelota de plastico sabor vainilla</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <img src="../img/SHAMPOOBLANCO-01_200x.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Shampoo</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
 
         </main>
         <footer class="pie">
-            <a href="../index.html">Inicio</a>
-            <a href="./perros.html">Perros</a>
-            <a href="./gatos.html">Gatos</a>
-            <a href="./accesorios.html">Accesorios</a>
-            <a href="./contacto.html">contacto</a>
+            <div class="menu_pie">
+                <a href="index.html">Inicio</a>
+                <a href="./paginas/perros.html">Perros</a>
+                <a href="./paginas/gatos.html">Gatos</a>
+                <a href="./paginas/accesorios.html">Accesorios</a>
+                <a href="./paginas/contacto.html">contacto</a>
+            </div>
+            <div class="iconos">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </div>
         </footer>
     </div>
     <script src="../js/bootstrap.bundle.min.js"></script>

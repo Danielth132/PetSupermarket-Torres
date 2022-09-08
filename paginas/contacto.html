@@ -6,61 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://kit.fontawesome.com/e5e219bf2f.js" crossorigin="anonymous"></script>
+    <title>Pet Supermarket - Contacto</title>
+    <meta name="description" content="Contacta con nosotros">
+    <meta name="keywords" content="comida, mascota, perro, gato, alimento, jueguete, argentina, promocion, pet, market">
 </head>
 
 <body>
     <div class="contenedor">
         <header class="header">
             <h1>Pet Supermarket</h1>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./perros.html">Perros</a>
-                    </li>
-                    <li>
-                        <a href="./gatos.html">Gatos</a>
-                    </li>
-                    <li>
-                        <a href="./accesorios.html">Accesorios</a>
-                    </li>
-                    <li>
-                        <a href="./contacto.html">contacto</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg" style="background-color: custom-color;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./perros.html">Perros</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./gatos.html">Gatos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./accesorios.html">Accesorios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+
+
+
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
             </nav>
         </header>
         <main class="contenido">
-            <section>
-                <div class="carrito">
-                    <img src="../img/carro-de-compras.png" alt="">
-                </div>
-            </section>
+            <div class="carrito">
+                <img src="../img/carro-de-compras.png" alt="">
+            </div>
 
-            <section>
-                <div class="formulario">
-                    <form action="">
-                        <h2>CONTACTO</h2>
-                        <input type="text" name="nombre" placeholder="Nombre">
-                        <input type="text" name="corre" placeholder="Correo">
-                        <input type="text" name="telefono" placeholder="Telefono">
-                        <textarea name="mensaje" placeholder="Escriba aqui su consulta"></textarea>
-                        <input type="button" value="ENVIAR" id="boton">
-                </div>
+            <div class="formulario">
+                <form action="">
+                    <h2>CONTACTO</h2>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <input type="text" name="corre" placeholder="Correo">
+                    <input type="text" name="telefono" placeholder="Telefono">
+                    <textarea name="mensaje" placeholder="Escriba aqui su consulta"></textarea>
+                    <input type="button" value="ENVIAR" id="boton">
+
                 </form>
-            </section>
+            </div>
 
         </main>
         <footer class="pie">
-            <a href="../index.html">Inicio</a>
-            <a href="./perros.html">Perros</a>
-            <a href="./gatos.html">Gatos</a>
-            <a href="./accesorios.html">Accesorios</a>
-            <a href="./contacto.html">contacto</a>
+            <div class="menu_pie">
+                <a href="index.html">Inicio</a>
+                <a href="./paginas/perros.html">Perros</a>
+                <a href="./paginas/gatos.html">Gatos</a>
+                <a href="./paginas/accesorios.html">Accesorios</a>
+                <a href="./paginas/contacto.html">contacto</a>
+            </div>
+            <div class="iconos">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </div>
         </footer>
     </div>
     <script src="../js/bootstrap.bundle.min.js"></script>

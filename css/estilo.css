@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@200&family=Big+Shoulders+Text:wght@300;400&family=Lemonada:wght@700&display=swap");
+.fa-facebook, .fa-instagram, .fa-whatsapp {
+  width: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center; }
+  .fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover {
+    background-color: #5881ce; }
+
+/*map*/
 * {
   margin: 0px;
   padding: 0px;
@@ -84,7 +93,6 @@ main h2 {
   background: linear-gradient(45deg, aqua, yellow, a aqua); }
 
 main .vendido {
-  background-color: aqua;
   display: flex;
   flex-flow: row wrap;
   align-items: baseline; }
@@ -94,11 +102,89 @@ main .vendido {
     main .vendido img:hover {
       transform: scale(1.2); }
 
+main .productos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline; }
+  main .productos img {
+    padding: 50px;
+    transition: all 1s; }
+    main .productos img:hover {
+      transform: scale(1.2); }
+
+main .formulario {
+  background-image: url(../img/f.elconfidencial.com_original_66e_7c0_ca2_66e7c0ca2c5263beb9c97da6c63b4365.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  main .formulario form {
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px; }
+    main .formulario form input {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 20px; }
+    main .formulario form textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 20px;
+      min-height: 100px;
+      max-height: 200px;
+      max-width: 100%; }
+    main .formulario form h2 {
+      color: #110f0f; }
+    main .formulario form #boton {
+      background-color: blue;
+      color: white;
+      padding: 20px; }
+      main .formulario form #boton:hover {
+        cursor: pointer; }
+
 .pie {
-  background-color: yellow; }
-  .pie a {
-    padding-left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+  padding-block: 20px; }
+  .pie .menu_pie a {
+    color: black;
+    padding-left: 20px;
     font-size: 20px; }
+  .pie .iconos {
+    color: white;
+    display: flex;
+    gap: 3rem;
+    padding-left: 10rem; }
+    .pie .iconos .fa-brands {
+      padding: 1rem; }
+
+.fa-facebook {
+  background-color: blue; }
+
+.fa-instagram {
+  background-color: #e984ae; }
+
+.fa-whatsapp {
+  background-color: green; }
+
+/*extend*/
+.fa-facebook:hover {
+  background-color: #5881ce; }
+
+.fa-instagram:hover {
+  background-color: pink; }
+
+.fa-whatsapp:hover {
+  background-color: #81ca12; }
 
 @media screen and (max-width: 768px) {
   .contenedor {

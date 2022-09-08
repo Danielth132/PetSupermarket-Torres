@@ -1,5 +1,5 @@
 @mixin product {
-    background-color: $color-pagina;
+    
     display: flex;
     flex-flow: row wrap;
     align-items: baseline;
@@ -11,3 +11,9 @@
     &:hover{
     transform: scale(1.2);}
 }
+/*map*/
+$redes:(
+    facebook:blue,
+    instagram:rgb(233, 132, 174),
+    whatsapp:green
+);
