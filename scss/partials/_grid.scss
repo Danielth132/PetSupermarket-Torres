@@ -1,0 +1,18 @@
+.contenedor{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(3,auto);
+
+    grid-template-areas: 
+    "header header header"
+    "contenido contenido contenido"
+    "footer footer footer";
+
+    .header{
+    grid-area: header;}
+
+    .contenido{
+    grid-area: contenido;}
+    .pie{
+    grid-area: footer;}
+}

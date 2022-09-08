@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@200&family=Big+Shoulders+Text:wght@300;400&family=Lemonada:wght@700&display=swap");
-/*variables*/
-/*Reset*/
 * {
   margin: 0px;
   padding: 0px;
@@ -11,36 +9,41 @@ body {
   background-color: aqua;
   color: black; }
 
-/*Grid*/
 .contenedor {
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(3, auto);
-  grid-template-areas: "header header header"
- "contenido contenido contenido"
- "footer footer footer"; }
+  grid-template-areas: "header header header" "contenido contenido contenido" "footer footer footer"; }
+  .contenedor .header {
+    grid-area: header; }
+  .contenedor .contenido {
+    grid-area: contenido; }
+  .contenedor .pie {
+    grid-area: footer; }
 
-.contenedor .header {
-  grid-area: header; }
-
-.contenedor .contenido {
-  grid-area: contenido; }
-
-.contenedor .pie {
-  grid-area: footer; }
-
-/*Estilos pagina*/
-h1 {
+header h1 {
   font-size: 100px;
   font-family: 'Lemonada', cursive;
   text-align: center;
   color: #1f0707;
-  background: linear-gradient(45deg, aqua, yellow, aqua);
   padding: 10px;
   animation-name: animacion;
   animation-iteration-count: infinite;
   animation-duration: 5s;
   animation-delay: 2s; }
+
+header .menu {
+  display: flex;
+  justify-content: right;
+  background-color: aqua; }
+  header .menu li {
+    display: flex;
+    margin: 2px;
+    padding-left: 10px;
+    font-size: 35px; }
+
+header .nav-item {
+  font-size: 20px; }
 
 @keyframes animacion {
   0% {
@@ -52,9 +55,27 @@ h1 {
   75% {
     background: linear-gradient(45deg, yellow, aqua, yellow); }
   100% {
-    background: linear-gradient(45deg, a aqua, yellow, aqua); } }
+    background: linear-gradient(45deg, aqua, yellow, aqua); } }
 
-h2 {
+main .carrito {
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+  main .carrito img {
+    max-width: 50px;
+    max-height: 50px; }
+
+main .promo {
+  margin: 20px auto;
+  text-align: center;
+  border: 10px solid yellow;
+  font-size: 20px; }
+  main .promo thead {
+    background-color: aqua; }
+  main .promo tbody tr th {
+    padding: 10px; }
+
+main h2 {
   text-align: center;
   font-size: 50px;
   font-family: 'Arima', cursive;
@@ -62,63 +83,16 @@ h2 {
   font-family: 'Lemonada', cursive;
   background: linear-gradient(45deg, aqua, yellow, a aqua); }
 
-.carrito {
-  position: fixed;
-  bottom: 0;
-  right: 0; }
-  .carrito img {
-    max-width: 50px;
-    max-height: 50px; }
-
-.menu {
-  display: flex;
-  justify-content: right;
-  background-color: aqua; }
-  .menu li {
-    display: flex;
-    margin: 2px;
-    padding-left: 10px;
-    font-size: 35px; }
-
-.nav-item {
-  font-size: 20px; }
-
-.portada {
-  display: flex;
-  justify-content: center;
-  background-color: aqua; }
-
-.promo {
-  margin: 20px auto;
-  text-align: center;
-  border: 10px solid yellow;
-  font-size: 20px; }
-  .promo thead {
-    background-color: aqua; }
-  .promo tbody tr th {
-    padding: 10px; }
-
-.vendido {
+main .vendido {
   background-color: aqua;
   display: flex;
   flex-flow: row wrap;
   align-items: baseline; }
-  .vendido img {
+  main .vendido img {
     padding: 50px;
     transition: all 1s; }
-  .vendido img:hover {
-    transform: scale(1.2); }
-
-.productos {
-  background-color: aqua;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: baseline; }
-  .productos img {
-    padding: 50px;
-    transition: all 1s; }
-  .productos img:hover {
-    transform: scale(1.2); }
+    main .vendido img:hover {
+      transform: scale(1.2); }
 
 .pie {
   background-color: yellow; }
@@ -128,9 +102,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
   .contenedor {
-    grid-template-areas: "header header header"
- "contenido contenido contenido"
- "footer footer footer"; }
+    grid-template-areas: "header header header" "contenido contenido contenido" "footer footer footer"; }
   h1 {
     font-size: 50px; }
   h2 {

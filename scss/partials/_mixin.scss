@@ -1,0 +1,13 @@
+@mixin product {
+    background-color: $color-pagina;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+}
+@mixin image {
+    padding: 50px;
+    transition: all 1s;
+        
+    &:hover{
+    transform: scale(1.2);}
+}
