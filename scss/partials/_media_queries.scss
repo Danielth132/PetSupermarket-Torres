@@ -26,13 +26,23 @@
         
     
     }
-    .pie a{
-        display: flex;
+    .pie{
+        text-align: center;
+        display: block;
         justify-content: center;
         margin: 10px;
 
-
+        .menu_pie{
+            a{
+                font-size: 50px;
+            }
+        }
+        .iconos{
+            padding: 10px 0 0 0;
+            justify-content: center;
+        }
     }
+    
     .formulario form{
         width: 100%;
     }
@@ -41,5 +51,12 @@
 @media screen and (max-width:480px){
     .promo{
         display: none;
+    }
+    .iconos{
+        font-size: 15vw;
+        .fa-brands{
+            width: 20vw;
+        }
+        
     }
 }
