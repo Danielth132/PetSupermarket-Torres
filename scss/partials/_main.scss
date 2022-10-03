@@ -3,6 +3,7 @@ main {
         position: fixed;
         bottom: 0;
         right: 0;
+        z-index: 2;
 
         img {
             max-width: 50px;
@@ -52,7 +53,11 @@ main {
         img {
             @include image;
         }
+
+        
     }
+    
+    
 
     .formulario {
         background-image: url(../img/f.elconfidencial.com_original_66e_7c0_ca2_66e7c0ca2c5263beb9c97da6c63b4365.jpg);
@@ -96,7 +101,8 @@ main {
 
             #boton {
                 background-color: map-get($redes, facebook);
-                color: white;
+                color: black;
+                background-color: $color-sec;
                 padding: 20px;
 
                 &:hover {
